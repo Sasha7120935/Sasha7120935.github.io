@@ -68,9 +68,6 @@
     margin: 20px;
     display: inline-block;
   }
-  #header .header-content {
-    padding-left: 0%;
-  }
   /* journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
@@ -96,6 +93,9 @@
   /* Navbar */
   nav {
     padding: 20px 15px;
+  }
+  #header .header-content {
+    padding-left: 0%;
   }
   .nav-menu {
     margin-top: 40px;
