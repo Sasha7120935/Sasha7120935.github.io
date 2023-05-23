@@ -68,6 +68,9 @@
     margin: 20px;
     display: inline-block;
   }
+  #header .header-content {
+    padding-left: 0%;
+  }
   /* journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
