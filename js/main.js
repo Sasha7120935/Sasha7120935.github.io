@@ -155,3 +155,14 @@ $(window).load(function(){
   });
 
 })
+
+// ========================================================================= //
+//  Pop-up
+// ========================================================================= //
+$(window).scroll(function () {
+  if ($(this).scrollTop() < 1000 && $(this).scrollTop() > 200) {
+    $('#pop-up').addClass('sticky');
+  } else {
+    $('#pop-up').removeClass('sticky');
+  }
+});

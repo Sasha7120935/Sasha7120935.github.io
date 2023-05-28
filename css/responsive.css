@@ -157,6 +157,10 @@
     float: none;
     display: inline-block;
   }
+  /* Pop-up */
+  .pop-up {
+    left: 21%;
+  }
 }
 
 /** Width between 600px to 0
