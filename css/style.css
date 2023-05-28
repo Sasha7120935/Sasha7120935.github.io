@@ -133,7 +133,7 @@ p {
 .container-1 {
     width: 100%;
     margin: 0px auto;
-    padding-top: 9%;
+    padding-top: 1%;
 }
 
 .form-control {
@@ -231,7 +231,6 @@ nav ul li a {
     /* display: flex; */
     align-items: center;
     height: 66%;
-    float: left;
     /* padding-left: 5%; */
     /* justify-content: space-between; */
 }
@@ -356,12 +355,13 @@ nav ul li a {
 }
 
 .container-carousel {
-    padding-top: 11%;
+    padding-top: 4%;
     text-align: center;
 }
 
 .owl-item {
     float: left;
+    padding-top: 10px;
 }
 
 .services-block span {
@@ -382,18 +382,23 @@ nav ul li a {
 }
 
 .services-block i {
-    font-size: 44px;
-    color: #b8a07e;
+    font-size: 60px;
+    color: white;
     line-height: 44px;
 }
 
 
 .services-carousel .owl-stage-outer {
     overflow: hidden;
+    background: black;
+    height: 120px;
+}
+.services-carousel .owl-stage-outer span {
+    color: white;
 }
 
 .services-carousel .owl-dots {
-    margin-top: 5px;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -475,7 +480,7 @@ nav ul li a {
 }
 
 .services-carousel {
-    padding-top: 9%;
+    padding-top: 5%;
     margin-bottom: 2%;
 }
 
@@ -788,7 +793,7 @@ nav ul li a {
         display: flex;
         align-items: center;
         height: 65%;
-        float: left;
+        float: unset;
         /* padding-left: 5%; */
         justify-content: space-around;
     }

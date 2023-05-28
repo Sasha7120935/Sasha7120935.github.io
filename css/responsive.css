@@ -164,6 +164,10 @@
   .pop-up {
     left: 21%;
   }
+  /* Services */
+  .services-carousel {
+    padding-top: 8%;
+  }
 }
 
 /** Width between 600px to 0

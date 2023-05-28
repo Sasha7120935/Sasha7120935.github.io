@@ -160,7 +160,7 @@ $(window).load(function(){
 //  Pop-up
 // ========================================================================= //
 $(window).scroll(function () {
-  if ($(this).scrollTop() < 1000 && $(this).scrollTop() > 200) {
+  if ($(this).scrollTop() < 1500 && $(this).scrollTop() > 1100) {
     $('#pop-up').addClass('sticky');
   } else {
     $('#pop-up').removeClass('sticky');
