@@ -178,6 +178,9 @@ let slider = tns({
   controlsContainer:"#controls",
   prevButton: ".previous",
   nextButton: ".next",
+  autoplayButtonOutput: false,
+  autoplay : true,
+  autoplayTimeout : 3000,
   responsive: {
     1600:{
       items:3,
