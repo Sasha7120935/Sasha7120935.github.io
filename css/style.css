@@ -1048,6 +1048,7 @@ header {
 li {
     list-style: none;
 }
+
 .navbar-2 {
     min-height: 70px;
     display: flex;
@@ -1091,6 +1092,7 @@ li {
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+
 .navbar-2 img {
     width: 100px;
     height: 100px;
@@ -1121,6 +1123,8 @@ li {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        opacity: 0.7;
+        background-color: #1c1a1a;
         transition: 0.3s;
     }
 
@@ -1131,7 +1135,9 @@ li {
     .nav-menu-2.active {
         left: 0;
     }
+
     nav ul li a {
         color: white;
+        font-weight: bold;
     }
 }
