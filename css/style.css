@@ -184,7 +184,7 @@ p {
 
 nav {
     position: fixed;
-    background: black;
+    /*background: black;*/
     z-index: 1000;
     width: 100%;
     display: none;
@@ -213,7 +213,7 @@ nav ul li a {
     position: relative;
     display: block;
     font-size: 25px;
-    color: #f8f9fa;
+    color: black;
     font-family: 'Poppins', helvetica;
     font-weight: 500;
     line-height: 16px;
@@ -392,6 +392,7 @@ nav ul li a {
     background: black;
     height: 120px;
 }
+
 .services-carousel .owl-stage-outer span {
     color: white;
 }
@@ -503,6 +504,7 @@ nav ul li a {
     top: unset;
     padding-top: 20px;
 }
+
 .slide-img .separator:after {
     content: "";
     display: block;
@@ -524,8 +526,9 @@ nav ul li a {
     bottom: -1px;
     height: 1px; /* Высота линии */
     background-color: black; /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
+    transition: width 0.5s; /* Время эффекта */
 }
+
 .slide-img .separator:hover {
     border: 0px;
     color: #7b7b7b;
@@ -864,16 +867,20 @@ nav ul li a {
     z-index: 22;
     opacity: 0.9;
 }
+
 .sticky {
     display: block;
 }
+
 .pop-up a {
     color: white;
 }
+
 .pop-up p {
     color: white;
     font-size: 25px;
 }
+
 .pop-up a:hover {
     color: #13135a;
 }
@@ -938,6 +945,7 @@ body {
     transform: translateY(-50%);
 
 }
+
 .controller button {
     background-color: black;
 }
@@ -980,6 +988,7 @@ body {
 .slide-img {
     position: relative;
 }
+
 .slide-img a:hover {
     opacity: 1;
     transform: scale(1);
@@ -1002,7 +1011,8 @@ body {
     height: 63px;
     top: 42%;
 }
-.slide-img  .link-module {
+
+.slide-img .link-module {
     transition: 0.8s;
     color: white;
     position: absolute;
@@ -1022,5 +1032,106 @@ body {
 @media (max-width: 1600px) {
     .container-2 {
         width: 100%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #262626;
+}
+
+li {
+    list-style: none;
+}
+.navbar-2 {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+
+}
+
+.nav-branding {
+    font-size: 2rem;
+
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.navbar-2 img {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active.bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active.bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active.bar:nth-child(3) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-menu-2 {
+        position: fixed;
+        left: -441px;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu-2.active {
+        left: 0;
+    }
+    nav ul li a {
+        color: white;
     }
 }
