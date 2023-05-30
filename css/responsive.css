@@ -162,13 +162,13 @@
     background: black;
     left: 6%;
     opacity: 1;
-    text-align: center;
+    /* text-align: center; */
     margin: auto;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 41px;
-    height: 76px;
+    line-height: 31px;
+    height: 58px;
   }
   .previous, .next {
     padding: 5px;
