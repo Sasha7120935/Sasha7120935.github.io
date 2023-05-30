@@ -166,3 +166,33 @@ $(window).scroll(function () {
     $('#pop-up').removeClass('sticky');
   }
 });
+// ========================================================================= //
+//  Slider
+// ========================================================================= //
+
+let slider = tns({
+  container: ".my-slider",
+  "slideBy": 1,
+  "spend": 400,
+  "nav": false,
+  controlsContainer:"#controls",
+  prevButton: ".previous",
+  nextButton: ".next",
+  responsive: {
+    1600:{
+      items:3,
+      gutter: 20
+    },
+    1024:{
+      items:3,
+      gutter: 20
+    },
+    767:{
+      items:2,
+      gutter: 20
+    },
+    480:{
+      items:1
+    }
+  }
+})

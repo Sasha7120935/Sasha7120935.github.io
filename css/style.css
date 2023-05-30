@@ -187,7 +187,6 @@ nav {
     background: black;
     z-index: 1000;
     width: 100%;
-    padding: 20px;
     display: none;
     -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
@@ -484,10 +483,53 @@ nav ul li a {
     margin-bottom: 2%;
 }
 
-.separator {
+.slide-img .separator {
     color: black;
     max-width: 100%;
     font-family: sans-serif;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    transition: 0.8s;
+    position: unset;
+    background: unset;
+    left: unset;
+    opacity: unset;
+    margin: auto;
+    font-style: normal;
+    line-height: unset;
+    width: unset;
+    height: unset;
+    top: unset;
+    padding-top: 20px;
+}
+.slide-img .separator:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.8s; /* Время эффекта */
+}
+
+.slide-img .separator:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 1px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.slide-img .separator:hover {
+    border: 0px;
+    color: #7b7b7b;
+    border-bottom: 1px solid;
 }
 
 #portfolio .portfolio-list .nav {
@@ -834,4 +876,151 @@ nav ul li a {
 }
 .pop-up a:hover {
     color: #13135a;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* slider
+/*-----------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+#slider {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2 {
+    margin: auto;
+    position: relative;
+}
+
+.subcontinent {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: auto;
+}
+
+.controller {
+
+}
+
+.left-button {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    z-index: 8;
+    left: 17px;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.right-button {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    z-index: 8;
+    right: 16px;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+.controller button {
+    background-color: black;
+}
+
+#controls i {
+    color: white;
+    font-size: 1rem;
+
+}
+
+.previous, .next {
+    padding: 5px;
+    width: 41px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    border: 3px solid white;
+    background-color: unset;
+    opacity: 1;
+}
+
+.previous:hover, .next:hover {
+    border: 3px solid black;
+    opacity: 1;
+}
+
+.slide-img img {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.slide-img {
+    position: relative;
+}
+.slide-img a:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slide-img a {
+    transition: 0.8s;
+    color: white;
+    position: absolute;
+    background: black;
+    left: 25%;
+    opacity: 0;
+    text-align: center;
+    margin: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 58px;
+    width: 48%;
+    height: 63px;
+    top: 42%;
+}
+.slide-img  .link-module {
+    transition: 0.8s;
+    color: white;
+    position: absolute;
+    background: black;
+    left: 5%;
+    opacity: 0;
+    text-align: center;
+    margin: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 58px;
+    width: 89%;
+    height: 120px;
+}
+
+@media (max-width: 1600px) {
+    .container-2 {
+        width: 100%;
+    }
 }
