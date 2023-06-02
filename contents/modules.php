@@ -24,7 +24,7 @@
 							<a class="link-module"
 							   href="https://marketplace.magento.com/webalex-merchant-feed.html">Merchant Center
 								Google Shopping Feeds</a>
-							<a class="separator" href="../pages/blog-single-2.html" target=”_blank”><p class="separator">
+							<a class="separator" href="../blog-single-2.html" target=”_blank”><p class="separator">
 									Module
 									Merchant Center
 									Google Shopping Feeds</p></a>
@@ -35,7 +35,7 @@
 							<img src="../assets/images/blog-post-3.jpg" alt="Snow"/>
 							<a href="https://marketplace.magento.com/webalex-delivery.html"
 							   target=”_blank”>Delivery</a>
-							<a class="separator" href="../pages/blog-single-2.html" target=”_blank”><p class="separator">
+							<a class="separator" href="../blog-single-2.html" target=”_blank”><p class="separator">
 									Module
 									Delivery</p></a>
 						</div>
@@ -44,7 +44,7 @@
 						<div class="slide-img img-2">
 							<img src="../assets/images/blog-post-2.jpg" alt="Snow">
 							<a href="#">Address</a>
-							<a class="separator" href="../pages/blog-single.html" target=”_blank”><p class="separator">Module
+							<a class="separator" href="../blog-single.html" target=”_blank”><p class="separator">Module
 									Address</p></a>
 						</div>
 					</div>
@@ -52,7 +52,7 @@
 						<div class="slide-img img-4">
 							<img src="../assets/images/blog-post-3.jpg" alt="Snow">
 							<a href="#">Cart</a>
-							<a class="separator" href="../pages/blog-single-2.html" target=”_blank”><p class="separator">
+							<a class="separator" href="../blog-single-2.html" target=”_blank”><p class="separator">
 									Module
 									Cart</p></a>
 						</div>
