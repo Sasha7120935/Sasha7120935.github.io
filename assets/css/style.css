@@ -963,7 +963,7 @@ body {
 
 #slider {
     height: auto;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
